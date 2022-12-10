@@ -39,11 +39,11 @@
 <meta property="og:title" content="C语言单链表新人理解1.0">
 <meta property="og:url" content="http://example.com/2022/12/09/C%E8%AF%AD%E8%A8%80%E5%8D%95%E9%93%BE%E8%A1%A8%E6%96%B0%E4%BA%BA%E7%90%86%E8%A7%A31-0/index.html">
 <meta property="og:site_name" content="示例博客">
-<meta property="og:description" content="​                                                                     单链表 一.建立链表 建立链表有两种方法； （1）头插法： 我们需要head头指针，和一个用开辟节点的newnode结构体指针。 我们开始将head头指针指向NULL，以避免野指针出现。 第一步：我要知道怎么创立一个节点，我们先对newnode指针开辟动态内存">
+<meta property="og:description" content="单链表一.  建立链表 建立链表有两种方法； （1）头插法： 我们需要head头指针，和一个用开辟节点的newnode结构体指针。 我们开始将head头指针指向NULL，以避免野指针出现。 第一步：我要知道怎么创立一个节点，我们先对newnode指针开辟动态内存，newnode&#x3D;（struct 结构体名 *）malloc（sizeof(struct 结构体名)），然后这个newnode中得到了这个">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-12-09T14:44:32.000Z">
-<meta property="article:modified_time" content="2022-12-10T08:21:01.101Z">
+<meta property="article:modified_time" content="2022-12-10T15:38:07.717Z">
 <meta property="article:author" content="Mrhuanhao">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1742,7 +1742,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1670660647100),
+    lastupdate: new Date(1670686723541),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2573,8 +2573,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>​                                                                     <em><strong>单链表</strong></em></p>
-<p>一.<strong>建立链表</strong></p>
+    <h2 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h2><p><strong>一.</strong>  <strong>建立链表</strong></p>
 <p>建立链表有两种方法；</p>
 <p>（1）<strong>头插法</strong>：</p>
 <p>我们需要head头指针，和一个用开辟节点的newnode结构体指针。</p>
@@ -2647,7 +2646,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-12-10T16:21:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-12-10T23:38:07+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Dec 10, 2022</p>
@@ -2785,9 +2784,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E9%93%BE%E8%A1%A8"><span class="toc-text">单链表</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3355,7 +3364,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"示例博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Mrhuanhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"这是一个示例博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"示例博客"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/12/09/C语言单链表新人理解1-0/","name":"C语言单链表新人理解1.0"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"示例博客","url":"http://example.com/","keywords":null,"description":"这是一个示例博客","author":{"@type":"Person","name":"Mrhuanhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"这是一个示例博客"},"publisher":{"@type":"Organization","name":"示例博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C语言单链表新人理解1.0","description":"这是一个示例博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/12/09/C%E8%AF%AD%E8%A8%80%E5%8D%95%E9%93%BE%E8%A1%A8%E6%96%B0%E4%BA%BA%E7%90%86%E8%A7%A31-0/"},"author":{"@type":"Person","name":"Mrhuanhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"示例博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/12/09/C%E8%AF%AD%E8%A8%80%E5%8D%95%E9%93%BE%E8%A1%A8%E6%96%B0%E4%BA%BA%E7%90%86%E8%A7%A31-0/","wordCount":0,"datePublished":"2022-12-09T14:44:32.000Z","dateModified":"2022-12-10T08:21:01.101Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"示例博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Mrhuanhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"这是一个示例博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"示例博客"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2022/12/09/C语言单链表新人理解1-0/","name":"C语言单链表新人理解1.0"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"示例博客","url":"http://example.com/","keywords":null,"description":"这是一个示例博客","author":{"@type":"Person","name":"Mrhuanhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"这是一个示例博客"},"publisher":{"@type":"Organization","name":"示例博客","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"C语言单链表新人理解1.0","description":"这是一个示例博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2022/12/09/C%E8%AF%AD%E8%A8%80%E5%8D%95%E9%93%BE%E8%A1%A8%E6%96%B0%E4%BA%BA%E7%90%86%E8%A7%A31-0/"},"author":{"@type":"Person","name":"Mrhuanhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"示例博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2022/12/09/C%E8%AF%AD%E8%A8%80%E5%8D%95%E9%93%BE%E8%A1%A8%E6%96%B0%E4%BA%BA%E7%90%86%E8%A7%A31-0/","wordCount":0,"datePublished":"2022-12-09T14:44:32.000Z","dateModified":"2022-12-10T15:38:07.717Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
